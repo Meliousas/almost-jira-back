@@ -54,7 +54,6 @@ public class ManageAccountTest {
         System.out.println(account);
         System.out.println(accountFromDb);
         assertThat(accountFromDb).isNotNull();
-        assertThat(accountFromDb.getPassword()).isEqualTo(null);
     }
 
 
