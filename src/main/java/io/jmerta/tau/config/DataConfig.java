@@ -39,32 +39,6 @@ public class DataConfig {
     }
 
 
-
-//    @Autowired
-//    @Bean(name="sqlSessionFactoryBean")
-//    public SqlSessionFactoryBean getSqlSessionFactoryBean(@Qualifier("dataSource") DataSource dataSource) throws IOException {
-//        return this.getPreparedSqlSessionBean("classpath:db/mapper/**/*.xml", dataSource);
-//    }
-//
-//    private SqlSessionFactoryBean getPreparedSqlSessionBean(String resource, DataSource dataSource) throws IOException {
-//        List<Resource> resources = new ArrayList<>();
-//
-//        org.apache.ibatis.logging.LogFactory.useLog4JLogging();
-//        Resource[] mappers = new PathMatchingResourcePatternResolver().getResources(resource);
-//        resources.addAll(Arrays.asList(mappers));
-//
-//
-//        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
-//        bean.setDataSource(dataSource);
-//        bean.setMapperLocations(resources.toArray(new Resource[resources.size()]));
-//
-//        LocalDateTimeTypeHandler localDateTimeTypeHandler = new LocalDateTimeTypeHandler();
-//        LocalDateTimeTypeHandler[] handlers = {localDateTimeTypeHandler};
-//        bean.setTypeHandlers(handlers);
-//
-//        return bean;
-//    }
-
     @Autowired
     @Bean(name="flyway")
     public Flyway getFlywayBean(@Qualifier("dataSource") DataSource dataSource, @Value("${application.db.schema}") String schema) {
@@ -76,15 +50,5 @@ public class DataConfig {
 
         return bean;
     }
-
-//
-//    @Bean
-//    public MapperScannerConfigurer getMapperScannerConfigurer() {
-//        MapperScannerConfigurer bean = new MapperScannerConfigurer();
-//        bean.setBasePackage("io.jmerta.tau.repository");
-//        bean.setSqlSessionFactoryBeanName("sqlSessionFactoryBean");
-//
-//        return bean;
-//    }
 
 }

@@ -26,7 +26,6 @@ import java.util.UUID;
 @RequestMapping("/api/account")
 public class AccountManagmentController {
 
-
     private ManageAccount manageAccount;
     private AuthManager authManager;
 
