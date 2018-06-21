@@ -1,0 +1,21 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1529622330187,300,HTTP Request,200,,Thread Group 1-1,text,false,"The operation lasted too long: It took 300 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,299,0,152
+1529622330494,32,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-1,text,false,,1088,0,2,2,0,0,0
+1529622330530,184,HTTP Request,200,,Thread Group 1-1,text,false,"The operation lasted too long: It took 184 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,184,0,0
+1529622330715,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-1,text,false,,1088,0,2,2,0,0,0
+1529622330450,307,HTTP Request,200,,Thread Group 1-2,text,false,"The operation lasted too long: It took 307 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,307,0,1
+1529622330758,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-2,text,false,,1088,0,2,2,0,0,0
+1529622330716,208,HTTP Request,200,,Thread Group 1-1,text,false,"The operation lasted too long: It took 208 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,208,0,0
+1529622330925,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-1,text,false,,1088,0,2,2,0,0,0
+1529622330759,196,HTTP Request,200,,Thread Group 1-2,text,false,"The operation lasted too long: It took 196 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,196,0,0
+1529622330956,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-2,text,false,,1088,0,2,2,0,0,0
+1529622330957,176,HTTP Request,200,,Thread Group 1-2,text,false,"The operation lasted too long: It took 176 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,175,0,0
+1529622331133,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-2,text,false,,1088,0,2,2,0,0,0
+1529622330927,416,HTTP Request,200,,Thread Group 1-1,text,false,"The operation lasted too long: It took 416 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,416,0,0
+1529622331344,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-1,text,false,,1088,0,2,2,0,0,0
+1529622331345,321,HTTP Request,200,,Thread Group 1-1,text,false,"The operation lasted too long: It took 321 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,2,2,320,0,0
+1529622331669,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-1,text,false,,1088,0,2,2,0,0,0
+1529622331134,648,HTTP Request,200,,Thread Group 1-2,text,false,"The operation lasted too long: It took 648 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,1,1,648,0,0
+1529622331784,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-2,text,false,,1088,0,1,1,0,0,0
+1529622331785,93,HTTP Request,200,,Thread Group 1-2,text,false,"The operation lasted too long: It took 93 milliseconds, but should not have lasted longer than 25 milliseconds.",784,138,1,1,93,0,0
+1529622331879,0,HTTP Request,Non HTTP response code: java.nio.charset.UnsupportedCharsetException,Non HTTP response message: text,Thread Group 1-2,text,false,,1088,0,1,1,0,0,0
