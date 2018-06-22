@@ -3,6 +3,7 @@ package io.jmerta.tau.domain.accountManagment.service;
 import io.jmerta.tau.TauApplication;
 import io.jmerta.tau.config.DataConfig;
 import io.jmerta.tau.domain.accountManagment.entity.Account;
+import io.jmerta.tau.domain.accountManagment.entity.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
@@ -76,4 +77,18 @@ public class ManageAccountTest {
         assertThat(accountFromSession).isNotNull();
         assertThat(accountFromSession.getUsername()).isEqualToIgnoringCase(accountFromDb.getUsername());
     }
+
+    @Test
+    public void testLoadUserByToken(){
+        Account account = new Account("Amelia", "haslo1234",null,null);
+
+        Account accountFromDb = manageAccount.createNewAccount(account);
+        manageAccount.saveSession(accountFromDb, "isToken");
+
+        Account accountByToken = manageAccount.loadUserByToken("isToken");
+
+        assertThat(accountByToken).isNotNull();
+        assertThat(accountByToken.getUsername()).isEqualToIgnoringCase(account.getUsername());
+    }
+
 }
