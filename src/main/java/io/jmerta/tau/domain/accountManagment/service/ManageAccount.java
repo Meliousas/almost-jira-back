@@ -26,8 +26,7 @@ public class ManageAccount implements UserDetailsService {
 
     @Override
     public Account loadUserByUsername(String username) throws UsernameNotFoundException {
-        Account account =  accountRepository.getAccountByUsername(username);
-        return account;
+        return accountRepository.getAccountByUsername(username);
     }
 
     public Account loadUserByToken(String token) {
